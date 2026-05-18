@@ -1,0 +1,4 @@
+model_name,cv_selection_score,cv_recall,cv_f1,cv_roc_auc,best_params,accuracy,precision,recall,f1_score,confusion_matrix,roc_auc
+Logistic Regression,0.7618,0.7677,0.753,0.8251,"{'model__C': 2.0, 'model__class_weight': 'balanced'}",0.7458,0.7372,0.7639,0.7503,"[[5145, 1925], [1669, 5400]]",0.8232
+Decision Tree,0.7567,0.7669,0.7414,0.8007,"{'model__class_weight': 'balanced', 'model__max_depth': 10, 'model__min_samples_leaf': 5, 'model__min_samples_split': 2}",0.7358,0.7163,0.7809,0.7472,"[[4884, 2186], [1549, 5520]]",0.8083
+Random Forest,0.7817,0.7955,0.761,0.8266,"{'model__class_weight': 'balanced_subsample', 'model__max_depth': None, 'model__min_samples_leaf': 5, 'model__min_samples_split': 2, 'model__n_estimators': 150}",0.7491,0.7292,0.7926,0.7596,"[[4989, 2081], [1466, 5603]]",0.8278

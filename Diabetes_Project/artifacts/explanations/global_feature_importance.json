@@ -1,0 +1,115 @@
+{
+  "sample_size": 1200,
+  "feature_importance": [
+    {
+      "feature": "GenHlth",
+      "mean_abs_shap": 0.100015,
+      "mean_shap": 0.003425
+    },
+    {
+      "feature": "HighBP",
+      "mean_abs_shap": 0.09081,
+      "mean_shap": 0.002651
+    },
+    {
+      "feature": "BMI",
+      "mean_abs_shap": 0.076494,
+      "mean_shap": 0.003171
+    },
+    {
+      "feature": "HighChol",
+      "mean_abs_shap": 0.061392,
+      "mean_shap": -0.001223
+    },
+    {
+      "feature": "Age",
+      "mean_abs_shap": 0.051534,
+      "mean_shap": 0.002076
+    },
+    {
+      "feature": "DiffWalk",
+      "mean_abs_shap": 0.026003,
+      "mean_shap": -0.001771
+    },
+    {
+      "feature": "Income",
+      "mean_abs_shap": 0.024094,
+      "mean_shap": 0.001072
+    },
+    {
+      "feature": "HeartDiseaseorAttack",
+      "mean_abs_shap": 0.02035,
+      "mean_shap": -0.001497
+    },
+    {
+      "feature": "Sex",
+      "mean_abs_shap": 0.013487,
+      "mean_shap": -0.0005
+    },
+    {
+      "feature": "PhysHlth",
+      "mean_abs_shap": 0.010392,
+      "mean_shap": 0.000179
+    },
+    {
+      "feature": "Education",
+      "mean_abs_shap": 0.008887,
+      "mean_shap": -0.00011
+    },
+    {
+      "feature": "PhysActivity",
+      "mean_abs_shap": 0.007243,
+      "mean_shap": -0.000329
+    },
+    {
+      "feature": "HvyAlcoholConsump",
+      "mean_abs_shap": 0.006215,
+      "mean_shap": 0.00018
+    },
+    {
+      "feature": "MentHlth",
+      "mean_abs_shap": 0.006066,
+      "mean_shap": -9.6e-05
+    },
+    {
+      "feature": "CholCheck",
+      "mean_abs_shap": 0.004323,
+      "mean_shap": -5.6e-05
+    },
+    {
+      "feature": "Stroke",
+      "mean_abs_shap": 0.003798,
+      "mean_shap": -3.3e-05
+    },
+    {
+      "feature": "Smoker",
+      "mean_abs_shap": 0.00378,
+      "mean_shap": 2.7e-05
+    },
+    {
+      "feature": "Fruits",
+      "mean_abs_shap": 0.002914,
+      "mean_shap": -0.000102
+    },
+    {
+      "feature": "Veggies",
+      "mean_abs_shap": 0.00272,
+      "mean_shap": -0.00016
+    },
+    {
+      "feature": "NoDocbcCost",
+      "mean_abs_shap": 0.001204,
+      "mean_shap": 0.000145
+    },
+    {
+      "feature": "AnyHealthcare",
+      "mean_abs_shap": 0.000876,
+      "mean_shap": 0.00015
+    }
+  ],
+  "plot_files": {
+    "feature_importance": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/plots/feature_importance.png",
+    "shap_summary": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/plots/shap_summary.png",
+    "shap_bar": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/plots/shap_global_bar.png"
+  }
+}

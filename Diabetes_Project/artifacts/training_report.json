@@ -1,0 +1,129 @@
+{
+  "trained_at_utc": "2026-05-17T16:21:39.551159+00:00",
+  "dataset_used": "diabetes_brfss_binary.csv",
+  "selection_metric": "0.6 * cv_recall + 0.4 * cv_f1",
+  "selected_model": "Random Forest",
+  "production_model_policy": "Random Forest is retained as the final production model for the deployed API and explainability workflow.",
+  "target_column": "Diabetes_binary",
+  "feature_columns": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "models": [
+    {
+      "model_name": "Logistic Regression",
+      "cv_selection_score": 0.7618,
+      "cv_recall": 0.7677,
+      "cv_f1": 0.753,
+      "cv_roc_auc": 0.8251,
+      "best_params": {
+        "model__C": 2.0,
+        "model__class_weight": "balanced"
+      },
+      "accuracy": 0.7458,
+      "precision": 0.7372,
+      "recall": 0.7639,
+      "f1_score": 0.7503,
+      "confusion_matrix": [
+        [
+          5145,
+          1925
+        ],
+        [
+          1669,
+          5400
+        ]
+      ],
+      "roc_auc": 0.8232
+    },
+    {
+      "model_name": "Decision Tree",
+      "cv_selection_score": 0.7567,
+      "cv_recall": 0.7669,
+      "cv_f1": 0.7414,
+      "cv_roc_auc": 0.8007,
+      "best_params": {
+        "model__class_weight": "balanced",
+        "model__max_depth": 10,
+        "model__min_samples_leaf": 5,
+        "model__min_samples_split": 2
+      },
+      "accuracy": 0.7358,
+      "precision": 0.7163,
+      "recall": 0.7809,
+      "f1_score": 0.7472,
+      "confusion_matrix": [
+        [
+          4884,
+          2186
+        ],
+        [
+          1549,
+          5520
+        ]
+      ],
+      "roc_auc": 0.8083
+    },
+    {
+      "model_name": "Random Forest",
+      "cv_selection_score": 0.7817,
+      "cv_recall": 0.7955,
+      "cv_f1": 0.761,
+      "cv_roc_auc": 0.8266,
+      "best_params": {
+        "model__class_weight": "balanced_subsample",
+        "model__max_depth": null,
+        "model__min_samples_leaf": 5,
+        "model__min_samples_split": 2,
+        "model__n_estimators": 150
+      },
+      "accuracy": 0.7491,
+      "precision": 0.7292,
+      "recall": 0.7926,
+      "f1_score": 0.7596,
+      "confusion_matrix": [
+        [
+          4989,
+          2081
+        ],
+        [
+          1466,
+          5603
+        ]
+      ],
+      "roc_auc": 0.8278
+    }
+  ],
+  "artifacts": {
+    "model": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/diabetes_model.joblib",
+    "training_report": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/training_report.json",
+    "data_audit": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/data_audit.json",
+    "model_comparison": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/model_comparison.csv",
+    "global_explanation": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/explanations/global_feature_importance.json",
+    "example_local_explanation": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/explanations/example_local_explanation.json",
+    "class_distribution_plot": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/plots/class_distribution.png",
+    "confusion_matrix_plot": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/plots/confusion_matrix.png",
+    "roc_curve_plot": "/Users/eshafarrukh/Downloads/Diabetes_Project/artifacts/plots/roc_curve.png"
+  },
+  "preprocessing_note": "A single sklearn pipeline contains median imputation and standard scaling, so no separate scaler file is required at runtime.",
+  "explainability_note": "SHAP is generated for the final Random Forest model to support both global and local explanations."
+}

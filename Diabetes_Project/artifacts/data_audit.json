@@ -1,0 +1,14 @@
+{
+  "dataset_name": "diabetes_brfss_binary.csv",
+  "raw_rows": 70692,
+  "rows_used_for_training": 70692,
+  "missing_values_total": 0,
+  "duplicate_rows_detected": 1635,
+  "duplicate_rows_retained": 1635,
+  "duplicate_row_note": "Duplicate rows were retained because BRFSS features are discrete survey indicators and repeated feature combinations can represent distinct respondents.",
+  "target_distribution": {
+    "0": 35346,
+    "1": 35346
+  },
+  "positive_class_rate": 0.5
+}

@@ -1,0 +1,229 @@
+{
+  "base_value": 0.5,
+  "feature_values": {
+    "HighBP": 1.0,
+    "HighChol": 1.0,
+    "CholCheck": 1.0,
+    "BMI": 43.0,
+    "Smoker": 1.0,
+    "Stroke": 1.0,
+    "HeartDiseaseorAttack": 1.0,
+    "PhysActivity": 0.0,
+    "Fruits": 1.0,
+    "Veggies": 1.0,
+    "HvyAlcoholConsump": 0.0,
+    "AnyHealthcare": 1.0,
+    "NoDocbcCost": 0.0,
+    "GenHlth": 5.0,
+    "MentHlth": 30.0,
+    "PhysHlth": 30.0,
+    "DiffWalk": 1.0,
+    "Sex": 1.0,
+    "Age": 10.0,
+    "Education": 5.0,
+    "Income": 5.0
+  },
+  "local_feature_impacts": [
+    {
+      "feature": "BMI",
+      "value": 43.0,
+      "shap_value": 0.093491,
+      "absolute_impact": 0.093491,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "GenHlth",
+      "value": 5.0,
+      "shap_value": 0.080391,
+      "absolute_impact": 0.080391,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "HighBP",
+      "value": 1.0,
+      "shap_value": 0.051222,
+      "absolute_impact": 0.051222,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "HeartDiseaseorAttack",
+      "value": 1.0,
+      "shap_value": 0.0509,
+      "absolute_impact": 0.0509,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "HighChol",
+      "value": 1.0,
+      "shap_value": 0.041797,
+      "absolute_impact": 0.041797,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "DiffWalk",
+      "value": 1.0,
+      "shap_value": 0.040555,
+      "absolute_impact": 0.040555,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "Age",
+      "value": 10.0,
+      "shap_value": 0.02617,
+      "absolute_impact": 0.02617,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "PhysHlth",
+      "value": 30.0,
+      "shap_value": 0.019549,
+      "absolute_impact": 0.019549,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "Income",
+      "value": 5.0,
+      "shap_value": 0.016695,
+      "absolute_impact": 0.016695,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "Stroke",
+      "value": 1.0,
+      "shap_value": 0.01359,
+      "absolute_impact": 0.01359,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "PhysActivity",
+      "value": 0.0,
+      "shap_value": 0.009338,
+      "absolute_impact": 0.009338,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "Sex",
+      "value": 1.0,
+      "shap_value": 0.008626,
+      "absolute_impact": 0.008626,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "Education",
+      "value": 5.0,
+      "shap_value": 0.00708,
+      "absolute_impact": 0.00708,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "Fruits",
+      "value": 1.0,
+      "shap_value": 0.003941,
+      "absolute_impact": 0.003941,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "MentHlth",
+      "value": 30.0,
+      "shap_value": -0.00362,
+      "absolute_impact": 0.00362,
+      "direction": "decrease_risk"
+    },
+    {
+      "feature": "HvyAlcoholConsump",
+      "value": 0.0,
+      "shap_value": 0.003221,
+      "absolute_impact": 0.003221,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "NoDocbcCost",
+      "value": 0.0,
+      "shap_value": 0.002923,
+      "absolute_impact": 0.002923,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "CholCheck",
+      "value": 1.0,
+      "shap_value": 0.001429,
+      "absolute_impact": 0.001429,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "Smoker",
+      "value": 1.0,
+      "shap_value": -0.001345,
+      "absolute_impact": 0.001345,
+      "direction": "decrease_risk"
+    },
+    {
+      "feature": "AnyHealthcare",
+      "value": 1.0,
+      "shap_value": 0.001198,
+      "absolute_impact": 0.001198,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "Veggies",
+      "value": 1.0,
+      "shap_value": 0.000679,
+      "absolute_impact": 0.000679,
+      "direction": "increase_risk"
+    }
+  ],
+  "top_positive_features": [
+    {
+      "feature": "BMI",
+      "value": 43.0,
+      "shap_value": 0.093491,
+      "absolute_impact": 0.093491,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "GenHlth",
+      "value": 5.0,
+      "shap_value": 0.080391,
+      "absolute_impact": 0.080391,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "HighBP",
+      "value": 1.0,
+      "shap_value": 0.051222,
+      "absolute_impact": 0.051222,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "HeartDiseaseorAttack",
+      "value": 1.0,
+      "shap_value": 0.0509,
+      "absolute_impact": 0.0509,
+      "direction": "increase_risk"
+    },
+    {
+      "feature": "HighChol",
+      "value": 1.0,
+      "shap_value": 0.041797,
+      "absolute_impact": 0.041797,
+      "direction": "increase_risk"
+    }
+  ],
+  "top_negative_features": [
+    {
+      "feature": "MentHlth",
+      "value": 30.0,
+      "shap_value": -0.00362,
+      "absolute_impact": 0.00362,
+      "direction": "decrease_risk"
+    },
+    {
+      "feature": "Smoker",
+      "value": 1.0,
+      "shap_value": -0.001345,
+      "absolute_impact": 0.001345,
+      "direction": "decrease_risk"
+    }
+  ],
+  "explanation_text": "The model predicts 'Diabetic' with a diabetes probability of 96.78%. The strongest factors pushing risk upward were BMI, GenHlth, HighBP. The strongest factors reducing risk were MentHlth, Smoker."
+}
